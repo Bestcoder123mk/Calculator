@@ -1,0 +1,117 @@
+div {
+  padding: 1em 1em 0.25em 1em;
+  max-width: 500px;
+  background: #cccccc;
+  margin: 0 auto;
+  font-family: Arial, san-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-animation: comedown 1.5s;
+          animation: comedown 1.5s;
+  top: 0px;
+  position: relative;
+}
+div ul {
+  padding-left: 0px;
+  -webkit-animation: comeleft 1.5s;
+          animation: comeleft 1.5s;
+  position: relative;
+  left: 0px;
+}
+div ul li {
+  list-style-type: none;
+  background: #ffffff;
+}
+div ul:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: 0px;
+}
+div ul:first-child li {
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 8%;
+}
+div ul.calc {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+div ul.calc li {
+  width: calc(100% / 5.5);
+  background: #ffffff;
+  color: #328efe;
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+div ul.calc li:active {
+  background: #000000;
+}
+div ul.calc li:last-child {
+  flex: 2;
+}
+@-webkit-keyframes comedown {
+  0% {
+    top: -200px;
+  }
+  90% {
+    top: 0px;
+  }
+  95% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes comedown {
+  0% {
+    top: -200px;
+  }
+  90% {
+    top: 0px;
+  }
+  95% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes comeleft {
+  0% {
+    left: -200px;
+  }
+  90% {
+    left: 0px;
+  }
+  95% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes comeleft {
+  0% {
+    left: -200px;
+  }
+  90% {
+    left: 0px;
+  }
+  95% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
